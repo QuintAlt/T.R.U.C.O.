@@ -1,3 +1,3 @@
-# Projeto T.R.U.C.O
+# Projeto T.R.U.C.O.
 
-Este é o repositório de armazenamento dos arquivos do projeto TRUCO.
+Este é o repositório de armazenamento dos arquivos do projeto T.R.U.CO.
