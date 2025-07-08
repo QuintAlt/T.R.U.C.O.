@@ -18,6 +18,7 @@ body {
     color: black;
     line-height: 1.6;
     padding: 20px;
+    background-color: #f0f0f0;
 }
 
 #logo {
@@ -62,7 +63,6 @@ nav a {
     margin: auto;
     color: #f0f0f0;
     background-color: #a41010;
-    background-image: url('imagens/fundo-titulos.jpg');
     text-align: center;
     width: 30%;
     padding: 20px;
@@ -70,9 +70,28 @@ nav a {
 
 main {
     font-family: quicksand;
-    background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
+    margin: 0 10%;
+}
+
+article {
+    padding: 40px;
+}
+#principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tabelas {
+    border-collapse: collapse;
+}
+
+td {
+    border: black 4px solid;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
 }
 
 main h2 {
@@ -87,8 +106,34 @@ main p {
 
 #inicial {
     margin: auto;
-    background-color: #d7d7d7;
     width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+#inicial img {
+    display: inline-block;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+#inicial p {
+    display: inline-block;
+}
+
+#historia, #tipos {
+    font-family: league spartan;
+    margin-top: 20px;
+}
+
+#historia {
+    color: black;
+}
+
+#tipos {
+    color: #a41010;
 }
 
 .com-pseudo {
@@ -119,6 +164,11 @@ main p {
     background-color: blue;
 }
 
+#imagem-rodape {
+    display: block;
+    margin: auto;
+    width: 30%;
+}
 footer {
     margin-top: 30px;
     text-align: center;
