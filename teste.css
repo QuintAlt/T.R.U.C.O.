@@ -1,38 +1,48 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(https://fonts.googleapis.com/css2?family=Quicksand&display=swap);
+}
+
 body {
-    background-color: whitesmoke;
+    background-color: f0f0f0;
     color: black;
     line-height: 1.6;
     padding: 20px;
 }
 
 header {
-    background-color: red;
+    background-color: #2b304d;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 nav {
-    background-color: white;
+    background-color: #21253d;
     padding: 10px;
-    margin: 20px 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: space-around;
     padding: 60px;
     justify-content: center;
 }
 
+nav li {
+    padding: 0px 40px;
+}
+
 nav a {
     text-decoration: none;
-    color: #0077cc;
+    color: #f0f0f0;
     font-weight: bold;
 }
 
 main {
-    background-color: white;
+    font-family: Quicksand;
+    background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
 }
@@ -79,6 +89,6 @@ footer {
     margin-top: 30px;
     text-align: center;
     padding: 15px;
-    background-color: blue;
+    background-color: #a41010;
     color: white;
 }
