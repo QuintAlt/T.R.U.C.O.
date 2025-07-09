@@ -32,12 +32,16 @@ header {
     padding: 20px;
     display: flex;
     justify-content: center;
+    font-family: league spartan;
 }
 
 nav {
     background-color: #21253d;
     padding: 5px;
-    
+    font-family: quicksand;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 nav ul {
@@ -58,11 +62,18 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    color: #cdf0ff;
+    text-decoration: underline;
+}
+
 .titulos-principais {
     font-family: league spartan;
     margin: auto;
     color: #f0f0f0;
-    background-color: #a41010;
+    background-image: url("imagens/fundo-titulos.png");
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     width: 30%;
     padding: 20px;
@@ -78,6 +89,7 @@ main {
 article {
     padding: 40px;
 }
+
 #principal {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -102,6 +114,7 @@ main h2 {
 
 main p {
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 #inicial {
@@ -113,17 +126,22 @@ main p {
     padding: 10px;
 }
 
-#inicial img {
-    display: inline-block;
+.imagens-ilustrativas {
     border: black 2px solid;
     border-radius: 10px;
 }
 
-#inicial p {
+#inicial img {
     display: inline-block;
+    width: 50%;
 }
 
-#historia, #tipos {
+#inicial p {
+    font-size: medium;
+    padding: 30px;
+}
+
+#tipos, #historia {
     font-family: league spartan;
     margin-top: 20px;
 }
@@ -132,36 +150,27 @@ main p {
     color: black;
 }
 
+#historia::after {
+    content: url(imagens/simbolo-espadas.png);
+    width: 30px;
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    padding-left: 5px;
+}
+
+
 #tipos {
     color: #a41010;
 }
 
-.com-pseudo {
+#tipos::after {
+    content: url(imagens/simbolo-coracoes.png);
+    width: 30px;
     display: inline-block;
     position: relative;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    max-width: 100%;
-    height: auto;
-}
-
-.com-pseudo::before {
-    content: "Imagem:";
-    position: absolute;
-    top: -20px;
-    left: 0;
-    font-size: 12px;
-    color: #555;
-}
-
-.com-pseudo::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: blue;
+    top: 13px;
+    padding-left: 5px;
 }
 
 #imagem-rodape {
@@ -171,8 +180,43 @@ main p {
 }
 footer {
     margin-top: 30px;
-    text-align: center;
     padding: 15px;
     background-color: #a41010;
     color: white;
+    font-family: quicksand;
+}
+
+#imagens-rodape {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 150px;
+    left: -120px;
+    font-family: league spartan;
+}
+
+#imagens-rodape > h2 {
+    position: relative;
+    top: 180px;
+    left: 50px
+}
+
+#logo-rodape {
+transition: linear 600ms opacity;
+opacity: 1;
+}
+
+#logo-rodape:hover {
+    opacity: 0;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    position: absolute;
+    width: 200px;
+    height: auto;
 }

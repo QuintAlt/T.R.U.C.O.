@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="teste.css">
+<link rel="icon" href="imagens/logo.png">
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -20,21 +21,26 @@
 
     <nav>
         <ul>
-            <li><a href="paginaini.html">INFORMAÇÃO</a></li>
-            <li><a href="pagina1.html">INICIAL</a></li>
+            <li><a href="pagina_info.html">INFORMAÇÃO</a></li>
+            <li><a href="index.html">INICIAL</a></li>
             <li><a href="pagina2.html">REGRAS</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1 class = "titulos-principais">INICIAL</h1>
+        <div class="titulos-principais">
+            <h1>INICIAL</h1>
+        </div>
         <article id = "inicial">
-            <p>paragrafo inicial</p>
-            <img src="imagens/cartas-antigas.jpg" alt="">
+            <p>Muito popular no Brasil, o Truco é um jogo de baralho que precisa de, no mínimo, 
+                2 jogadores para ser jogado. Diverso em suas variações, tanto por região quanto por época, o Dia do Truco é celebrado no dia 11 de Junho. <br> <br>
+                Esse site foi criado com o objetivo de explicar as regras do truco (mais especificamente do truco mineiro) de forma simples e fácil de se aprender, para que mais pessoas possam se divertir jogando.
+            </p>
+            <img class = "imagens-ilustrativas" src="imagens/imagem1.jpeg" alt="Imagem de uma pessoa segurando cartas. Só se vê a mão e as cartas.">
         </article>
         <section id="principal">
         <article>
-            <h2 class = "titulos-secundarios" id="tipos">TIPOS</h2>
+            <h2 id = "tipos">TIPOS</h2>
                 <p>A principal diferença entre o Truco Paulista e o Truco Mineiro está na definição das manilhas e na contagem dos pontos. No Truco Paulista, as manilhas são móveis e definidas pela “vira” — a carta virada após a distribuição. Já no Truco Mineiro, as manilhas são fixas: 4 de paus, 7 de copas, ás de espadas e 7 de ouros.
                  Na pontuação, o Truco Mineiro conta os pontos de 2 em 2, e os pedidos de truco avançam para 4, 6, 9 e 12. No Truco Paulista, a contagem é de 1 em 1, e os pedidos sobem para 3, 6, 9 e 12. </p>
                     <table class = "tabelas">
@@ -45,18 +51,30 @@
                     </table>
                 </article>
             <article>
-                <h2 class = "titulos-secundarios" id = "historia">HISTÓRIA</h2>
+                <h2 id = "historia">HISTÓRIA</h2>
                 <p>O truco tem origem na Inglaterra, no século XVII, a partir de um jogo chamado Put. De lá, se espalhou pela França (como "Truc") e depois pela Espanha. Os espanhóis e portugueses levaram o jogo para a América Latina, onde ele se popularizou e ganhou variações.
 
             No Brasil, o truco chegou com imigrantes espanhóis e portugueses, se espalhando principalmente em São Paulo, Minas Gerais e região Sul, dando origem às versões Paulista e Mineira — cada uma com regras próprias.</p>
+            <img class = "imagens-ilustrativas" src="imagens/cartas-antigas.jpg" alt="Cartas antigas de baralho">
             </article>
         </section>
         <img id = "imagem-rodape" src="imagens/cartas-rodape.png" alt="cartas de A de todos os naipes">
     </main>
 
     <footer>
-        <img id ="logo-rodape"src="imagens/logo.png" alt="">
-        <p>Rodapé do site</p>
+        <div>
+            <section id="imagens-rodape">
+                <img src="imagens/pato-girando.gif" alt="">
+                <img id = "logo-rodape" src="imagens/logo-fundo-vermelho.png" alt="">
+                <h2>T.R.U.C.O.</h2>
+            </section>
+            <section>
+                <h2>Site feitos pelos alunos do CEFET-MG</h2>
+                <p>Curso de Redes de Computadores, 1o ano de 2025 <br>
+                    Laboratório de Programação Web
+                </p>
+            </section>
+        </div>
     </footer>
 
 </body>
