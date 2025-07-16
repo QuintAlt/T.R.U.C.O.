@@ -13,6 +13,39 @@
   font-style: normal;
 }
 
+@media screen and (max-width: 500px) {
+    #principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #imagens-rodape {
+        display: block;
+        margin: auto;
+    }
+
+    #texto-rodape {
+        text-align: center;
+        margin-right: 10%;
+    }
+
+    #imagem-cartas {
+        display: block;
+        margin: auto;
+        width: 70%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 body {
     background-color: f0f0f0;
     color: black;
@@ -22,22 +55,23 @@ body {
 }
 
 #logo {
-    width: 100px;
-    padding-right: 10px;
+    width: 8em;
+    padding-right: 2%;
 }
 
 header {
     background-color: #2b304d;
     color: white;
-    padding: 20px;
+    padding: 2% 5%;
     display: flex;
     justify-content: center;
     font-family: league spartan;
+    width: 100%;
 }
 
 nav {
     background-color: #21253d;
-    padding: 5px;
+    padding: 1% 5%;
     font-family: quicksand;
     position: sticky;
     top: 0;
@@ -53,7 +87,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 0 40px;
+    padding: 0 3%;
 }
 
 nav a {
@@ -76,23 +110,21 @@ nav a:hover {
     background-position: center;
     text-align: center;
     width: 30%;
-    padding: 20px;
+    padding: 2%;
 }
 
 main {
     font-family: quicksand;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 3%;
     margin: 0 10%;
 }
 
 article {
-    padding: 40px;
+    padding: 2%;
 }
 
 #principal {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 }
 
 .tabelas {
@@ -102,12 +134,12 @@ article {
 td {
     border: black 4px solid;
     border-collapse: collapse;
-    padding: 5px;
+    padding: 1%;
     text-align: center;
 }
 
 main h2 {
-    margin-top: 20px;
+    margin-top: 5%;
     margin-bottom: 10px;
     color: #005fa3;
 }
@@ -131,14 +163,15 @@ main p {
     border-radius: 10px;
 }
 
-#inicial img {
-    display: inline-block;
+#imagem-principal {
+    display: block;
     width: 50%;
+    margin: auto;
 }
 
 #inicial p {
     font-size: medium;
-    padding: 30px;
+    padding: 5%;
 }
 
 #tipos, #historia {
@@ -173,26 +206,26 @@ main p {
     padding-left: 5px;
 }
 
-#imagem-rodape {
+#imagem-cartas {
     display: block;
     margin: auto;
-    width: 30%;
+    width: 50%;
 }
 footer {
-    margin-top: 30px;
-    padding: 15px;
+    margin-top: 2%;
+    padding: 2% 10%;
     background-color: #a41010;
     color: white;
     font-family: quicksand;
+    width: 100%;
 }
 
 #imagens-rodape {
-    position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 150px;
-    left: -120px;
+    padding-right: 10%;
     font-family: league spartan;
 }
 
@@ -210,6 +243,12 @@ opacity: 1;
 #logo-rodape:hover {
     opacity: 0;
 }
+
+#texto-rodape {
+    padding-left: 10%;
+    position: relative;
+    left: 0.5em;
+}
 footer div {
     display: flex;
     justify-content: center;
@@ -217,6 +256,6 @@ footer div {
 
 footer img {
     position: absolute;
-    width: 200px;
+    width: 13em;
     height: auto;
 }
