@@ -13,7 +13,7 @@
   font-style: normal;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #principal {
         display: flex;
         flex-direction: column;
@@ -44,6 +44,10 @@
         flex-direction: column;
         text-align: center;
     }
+   header {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 body {
@@ -71,7 +75,7 @@ header {
 
 nav {
     background-color: #21253d;
-    padding: 1% 5%;
+    padding: 1% 0%;
     font-family: quicksand;
     position: sticky;
     top: 0;
@@ -213,7 +217,7 @@ main p {
 }
 footer {
     margin-top: 2%;
-    padding: 2% 10%;
+    padding: 2% 0%;
     background-color: #a41010;
     color: white;
     font-family: quicksand;
