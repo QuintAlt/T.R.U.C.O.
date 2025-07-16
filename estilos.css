@@ -51,11 +51,15 @@
 }
 
 body {
-    background-color: f0f0f0;
-    color: black;
+    background-image: url(imagens/fundo-mesa.jpg);
+    color: #f0f0f0;
+    font-size: larger;
+    font-weight: bold;
     line-height: 1.6;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-origin: left;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #logo {
@@ -140,6 +144,7 @@ td {
     border-collapse: collapse;
     padding: 1%;
     text-align: center;
+    background-color: #1e361d;
 }
 
 main h2 {
@@ -181,10 +186,7 @@ main p {
 #tipos, #historia {
     font-family: league spartan;
     margin-top: 20px;
-}
-
-#historia {
-    color: black;
+    color: #f0f0f0;
 }
 
 #historia::after {
@@ -194,11 +196,6 @@ main p {
     position: relative;
     top: 13px;
     padding-left: 5px;
-}
-
-
-#tipos {
-    color: #a41010;
 }
 
 #tipos::after {
