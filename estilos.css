@@ -78,6 +78,10 @@ body {
     color: #f0f0f0;
     font-size: larger;
     font-weight: bold;
+    background-image: url(imagens/fundo-mesa.jpg);
+    color: #f0f0f0;
+    font-size: larger;
+    font-weight: bold;
     line-height: 1.6;
     padding: 20px;
     background-origin: left;
@@ -176,6 +180,7 @@ td {
     border-collapse: collapse;
     padding: 1%;
     text-align: center;
+    background-color: #1e361d;
     background-color: #1e361d;
 }
 
