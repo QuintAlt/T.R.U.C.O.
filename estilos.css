@@ -71,6 +71,13 @@
     #imagem-principal {
         width: 90% !important;
     }
+
+    #separador {
+        position: absolute;
+        top: 300px !important;
+        width: 90%;
+        height: 400px;
+    }
 }
 
 body {
@@ -199,7 +206,14 @@ main p {
 #videos {
     display: flex;
     justify-content: center;
+    position: relative;
     margin: 0% 5%;
+}
+
+#separador {
+    position: absolute;
+    z-index: -4;
+    top: 100px;
 }
 
 iframe {
@@ -288,7 +302,7 @@ footer {
 #imagens-rodape > h2 {
     position: relative;
     top: 215px;
-    left: 60px
+    left: 60px;
 }
 
 #logo-rodape {
