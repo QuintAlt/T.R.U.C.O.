@@ -25,40 +25,91 @@
 
     <nav>
         <ul>
-            <li><a href="pagina_info.html">JOGAR</a></li>
+            <li><a href="jogar.html">JOGAR</a></li>
             <li><a href="index.html">INICIAL</a></li>
             <li><a href="pagina_regras.html">REGRAS</a></li>
         </ul>
     </nav>
 
-    <main>
-        <article id="inicial">
-            <h2>Autores</h2>
+    <main id = "main-info">
+        <article id="autores">
             <p>Confira abaixo os autores responsáveis pelo desenvolvimento deste site:</p>
-            <table class="tabelas">
+            <table class="tabelas" id = "tabela-autores">
                 <thead>
                     <tr>
-                        <td colspan="3"><strong>Nome</strong></td>
+                        <td colspan="3"><strong>AUTORES</strong></td>
                     </tr>
                 </thead>
-                <tr><td>Mateus</td><td>Laura</td><td>Gabrielle</td></tr>
-                <td>Apenas existe.</td><td>Carrega o grupo.</td><td>Pega os textos.</td>
+                <tbody>
+                    <tr>
+                        <td>Mateus</td>
+                        <td>Laura</td>
+                        <td>Gabrielle</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Escrita do código em HTML</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Layout</li>
+                                <li>CSS</li>
+                                <li>Ajustes pontuais do HTML</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Escrita dos textos</li>
+                                <li>Pesquisa</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </article>
 
-        <article>
-            <h2>Colaboradores</h2>
-            <ul>Cristiano (pai da laura) Contribuição: Nos ajudou a entender o GitHub</ul>
-            <ul>Luke (gato do Mateus) Contribuição: Deu apoio moral para o Mateus e fez ele reescrever um código inteiro após deitar no teclado.</ul>
-        </article>
+        <section id = "colaboradores-e-creditos">
+            <article>
+                <h2 id = "colaboradores">COLABORADORES</h2>
+                <ul>
+                    <li>Cristiano Almeida Gonçalves: Ajuda com o Github e tirar dúvidas.</li>
+                    <li>Luke: gato do Mateus. Apoio moral para o Mateus e fez ele reescrever um código inteiro após deitar no teclado.</li>
+                </ul>
+                <img id = "imagem-principal" class="imagens-ilustrativas" src="imagens/imagem2.jpg" alt="">
+            </article>
 
-        <article>
-            <h2>Créditos</h2>
-            <p>eu sou um link hahaha- PQ EU NÃO TÔ CLICÁVEL!?!? PORQUEEEEEEEE :(</p>
-            <p>ybvcxzsertyuikjnbvcxsemmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm - Luke, 2025</p>
-        </article>
+            <article>
+                <h2 id = "creditos">CRÉDITOS</h2>
+                <p><strong>Imagens via:</strong></p>
+                <ul>
+                    <li>Google</li>
+                    <li>Freepik</li>
+                    <li>Pinterest</li>
+                    <li>Nosso Clube</li>
+                    <li>FreePNGimg</li>
+                    <li>G1</li>
+                    <li>Blogspot</li>
+                </ul>
+                <p>Truco em JavaScript disponível no <a href="https://github.com/pablohsgc/Truco-1x1?tab=readme-ov-file"> Github</a>, criado pelo usuário pablohsgc</p>
+            </article>
+        </section>
+
+    
+        <section id = "luke">
+            <h1>ybvcxzsertyuikjnbvcxsemmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm <br>- Luke, 2025</h1>
+        </section>
 
         <img id="imagem-cartas" src="imagens/cartas-rodape.png" alt="cartas de A de todos os naipes">
+
+         <aside>
+            <h2>Gostaria de colaborar? Tem sugestões?</h2>
+            <p>Insira seu email abaixo e entre em contato:</p>
+            <input type="email" name="email" placeholder="seu-email@exemplo.com" id="">
+            <button>Enviar</button>
+            <img src="imagens/cartas-decorativas.png" alt="">
+        </aside>
     </main>
 
     <footer>

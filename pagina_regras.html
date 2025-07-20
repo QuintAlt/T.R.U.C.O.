@@ -17,7 +17,7 @@
 
     <header>
         <img id="logo" src="imagens/logo.png" alt="Cartas de baralho, uma delas está virada para cima com a logo do CEFET-MG">
-        <section>
+        <section id = "titulo">
             <h1>T.R.U.C.O.</h1>
             <h3>Truco Rápido Universal Coletivo e Organizado</h3>
         </section>
@@ -25,45 +25,56 @@
 
     <nav>
         <ul>
-            <li><a href="pagina_info.html">JOGAR</a></li>
+            <li><a href="jogar.html">JOGAR</a></li>
             <li><a href="index.html">INICIAL</a></li>
             <li><a href="pagina_regras.html">REGRAS</a></li>
         </ul>
     </nav>
 
     <main>
-        <section>
-            <img src="" alt="Imagem do básico" />
+
+        <section id = "regras-reverso" class = "organizadores">
+            <div id = "basico-texto">
+                <h2 id = "basico">O BÁSICO</h2>
+                <p>>>TEXTO AQUI<<</p>
+            </div>
             <div>
-                <h2>O Básico</h2>
-                <p></p>
+                <img class = "imagens-ilustrativas" src="imagens/força-cartas.webp">
+                <img class = "imagens-ilustrativas" src="imagens/manilhas.jpg">
             </div>
         </section>
 
-        <section>
+        <section class = "organizadores">
             <div>
-                <h2>Trucando</h2>
-                <p></p>
+                <h2 id = "trucando">TRUCANDO</h2>
+                <p>>>TEXTO AQUI<<</p>
             </div>
-            <img src="" alt="Imagem de trucando" />
+            <img class = "imagens-ilustrativas" src="imagens/imagem3.webp">
+        </section>
+
+        <section id = "regras-reverso" class = "organizadores">
+            <div>
+                <h2 id = "pontuacao">PONTUAÇÃO</h2>
+                <p>>>TEXTO AQUI<<</p>
+            </div>
+            <img class = "imagens-ilustrativas" src = "imagens/contador-de-pontos.jpg">
         </section>
 
         <section>
-            <img src="" alt="Imagem de pontuação" />
-            <div>
-                <h2>Pontuação</h2>
-                <p></p>
-            </div>
+            <h2 id = "video-regras">VÍDEO</h2>
+            <iframe id = "video-copag" width="560" height="315" src="https://www.youtube.com/embed/7Q4E9Jc60xw?si=6J8fW_YAvPTO5DJD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
-        <section>
-            <h2>Vídeo</h2>
-            <video width="560" height="315" controls>
-                <source src="" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
-        </section>
+        <img id = "imagem-cartas" src="imagens/cartas-rodape.png" alt="cartas de A de todos os naipes">
     </main>
+
+    <aside>
+        <h2>Gostaria de colaborar? Tem sugestões?</h2>
+        <p>Insira seu email abaixo e entre em contato:</p>
+        <input type="email" name="email" placeholder="seu-email@exemplo.com" id="">
+        <button>Enviar</button>
+        <img src="imagens/cartas-decorativas.png" alt="">
+    </aside>
 
     <footer>
         <div>
