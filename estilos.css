@@ -13,20 +13,27 @@
   font-style: normal;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     #principal {
         display: flex;
         flex-direction: column;
     }
+    #inicial {
+        flex-direction: column;
+    }
+
+    #inicial img {
+        width: 300px;
+    }
 
     footer div {
         flex-direction: column;
-        align-content: center;
+        align-items: center;
     }
 
     #imagens-rodape {
-        display: block;
-        margin: auto;
+        position: relative;
+        left: -30px;
     }
 
     #texto-rodape {
@@ -47,6 +54,22 @@
    header {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+
+    #videos {
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe {
+        width: 80%;
+    }
+    .imagens-ilustrativas {
+        width: 70%;
+    }
+
+    #imagem-principal {
+        width: 90% !important;
     }
 }
 
@@ -72,10 +95,15 @@ header {
     background-color: #2b304d;
     color: white;
     padding: 2% 0%;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     font-family: league spartan;
     width: 100%;
+}
+
+header h1 {
+    font-size:35px;
 }
 
 nav {
@@ -86,6 +114,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 100;
+    font-size: 30px;
 }
 
 nav ul {
@@ -109,6 +138,7 @@ nav a {
 nav a:hover {
     color: #cdf0ff;
     text-decoration: underline;
+    transform: translateX(100px);
 }
 
 .titulos-principais {
@@ -125,8 +155,7 @@ nav a:hover {
 
 main {
     font-family: quicksand;
-    padding: 3%;
-    margin: 0 10%;
+    margin: 0 3%;
     font-size: 25px;
 }
 
@@ -164,13 +193,15 @@ main p {
 
 #videos {
     display: flex;
+    justify-content: center;
+    margin: 0% 5%;
 }
 
 iframe {
     display: block;
     padding-top: 5em;
     border: none;
-    margin: auto;
+    margin:1% 4% 5% 4%;
 }
 
 #inicial {
@@ -183,8 +214,10 @@ iframe {
 }
 
 .imagens-ilustrativas {
+    display: block;
     border: black 2px solid;
     border-radius: 10px;
+    margin: auto;
 }
 
 #imagem-principal {
@@ -201,6 +234,8 @@ iframe {
     font-family: league spartan;
     margin-top: 20px;
     color: #f0f0f0;
+    background-image: linear-gradient(to right, #aec9a5b5, #ffffff00);
+    padding: 3px;
 }
 
 #historia::after {
@@ -229,6 +264,7 @@ iframe {
 footer {
     margin-top: 2%;
     padding: 2% 0%;
+    padding-bottom: 50mpx;
     background-color: #a41010;
     color: white;
     font-family: quicksand;
@@ -239,7 +275,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
     padding-right: 10%;
     font-family: league spartan;
 }
