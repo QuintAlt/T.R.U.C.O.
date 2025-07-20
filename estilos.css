@@ -452,6 +452,9 @@ footer img {
     height: auto;
 }
 
+footer a:hover {
+    color: #ffc2c2;
+}
 a {
     color: #a6c4a5;
 }
