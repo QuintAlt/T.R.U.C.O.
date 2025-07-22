@@ -99,19 +99,30 @@
 
     #regras-reverso{
         flex-direction: column !important;
-    }
-
-    #basico-texto {
-        left: 0px !important;
+        width: 100% !important;
     }
 
     .organizadores > div > img, .organizadores > img{
         margin: auto !important;
         width: 90% !important;
+        margin-top: 5% !important;
+    }
+
+    .organizadores > div {
+        width: 100% !important;
     }
 
     #titulo {
         margin-left: 20% !important;
+    }
+
+    #regras-copag {
+        flex-direction: column-reverse;
+    }
+
+    #regras-copag > img {
+        width: 100% !important;
+        margin-bottom: 5%;
     }
 }
 
@@ -210,18 +221,34 @@ nav a:hover {
     justify-content: space-around;
 }
 
-.organizadores > img, .organizadores > div > img {
+.organizadores > img, .organizadores > div {
     width: 50%;
-    margin: 3% !important;
+    margin: auto !important;
+    margin-left: 3% !important;
+}
+
+#regras-copag {
+    display: flex;
+}
+
+#regras-copag > img {
+    width: 40%;
 }
 
 #regras-reverso {
     flex-direction: row-reverse;
 }
 
+#regras-reverso > div :not(#basico-texto) {
+    width: 80%;
+}
+
+#regras-reverso > div > img {
+    margin-top: 15%;
+}
+
 #basico-texto {
     position: relative;
-    left: -30%;
 }
 
 main {
@@ -343,7 +370,7 @@ iframe {
     padding: 3px;
 }
 
-#historia::after, #pontuacao::after{
+#historia::after{
     content: url(imagens/simbolo-copas.png);
     width: 30px;
     display: inline-block;
@@ -361,7 +388,7 @@ iframe {
     padding-left: 5px;
 }
 
-#trucando::after, #creditos::after{
+#creditos::after, #pontuacao::after{
     content: url(imagens/simbolo-ouros.png);
     width: 30px;
     display: inline-block;
@@ -461,6 +488,10 @@ a {
 
 a:hover {
     color: #5ad156;
+}
+
+p > a:visited {
+    color: #97eaba;
 }
 
 #luke {
