@@ -171,6 +171,10 @@ header h1 {
     font-size:35px;
 }
 
+#basico-texto  {
+    align-self: flex-end;
+}
+
 aside > img {
     width: 130px;
     display: block;
